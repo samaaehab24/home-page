@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="contact">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is my blog posts website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+</head>
+<body>
+    <main>
+        <h2>Contact Me</h2>
+        <section>
+            <article>
+                <form action="message.php" method="post" target="_blank">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Name" required>
+                    <br>
+                    <br>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Email" required>
+                    <br>
+                    <br>
+                    <textarea cols="30" rows="8" name="message" placeholder="Message" required></textarea>
+                    <br>
+                    <br>
+                    <button type="submit" value="send message">Submit</button>
+                    <button type="reset" value="clear">Reset</button>
+                </form>
+            </article>
+            <br>
+            <br>    
+            <article>
+                <table>
+                    <caption><b>Contact Information</b></caption>
+                    
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Time</th>
+                            <th>Closing Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For further inquiries, you can also email us at 
+                    <a href="mailto:info@gmail.com" target="_blank">info@myblog.com</a></p>
+            </article>
+        </section>
+    </main>
+    </body>
+    </html>
