@@ -4,33 +4,53 @@
         <meta charset="UTF-8" />
         <meta name="description" content="This is my blog posts website" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+        <link rel="stylesheet" href="style.css">
         <title>Blog Post</title>
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Albert+Sa
+            ns:ital,wght@0,100..900;1,100..900&family=Kalnia:wght@100..700&family=Matemasie&family=Pacifico&fam
+            ily=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;
+            1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Sigmar&family=Ubu
+            ntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100
+            ..900&display=swap"
+            rel="stylesheet">
+          <!--End of Google Fonts-->
     </head>
     <body>
         
-            <header><h2>Flowers</h2></header>
-            <nav>
-                <div class="links">
-                    <ul>
+       <!--Home Page-->
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>flowers</h2>
+                </div>
+                    <ul class="links">
                         <li><a href="#">Home</a></li>
                         <li><a href="#blog-post">Blog Posts</a></li>
-                        <li><a href="contact.html#contact" target="_blank">Contact Me</a></li>
+                        <li><a href="#contact" >Contact Me</a></li>
                     </ul>
-                </div>
             </nav>
-        
-       <main>
+          
+           
+       <main class="container">
             <section id="blog-post">
-                <article>
-               <div class="blog1">
-               <h2><a href="blog.html#Lovely-Weekend" target="_blank">Lovely Weekend</a> </h2>
+                <article class="blog-post">
+               
+               <h2><a href="#Lovely-Weekend" target="">Lovely Weekend</a> </h2>
               <time datetime="2025-05-02">MAY 2, 2025</time>
            
-                <p>Plus, a little announcement...</p>
-            </div></article>
-            <article>
-            <div class="blog2">
-                <h2><a href="blog.html#baby-names" target="_blank">What Are Your Favorite Baby Names?</a> </h2>
+           
+              <p>What are you up to this weekend? (Also, how cute are baby puffins?) Toby is watching the Yankees game tonight,
+                and Anton and I are going to sit on our stoop and eat popsicles. Hope you have a good one
+                , and here are a few links from around the web...</p>
+                <p class="continue"><a href="#Lovely-Weekend" target="">Continue</a></p>
+           </article>
+           <hr>
+            <article class="blog-post">
+                <h2><a href="#baby-names" >What Are Your Favorite Baby Names?</a> </h2>
             
             <time datetime="2025-05-06">MAY 6, 2025</time>
             
@@ -38,10 +58,185 @@
                 always made me feel bad. But fashion plays a central role in my latest novel, and while writing it, I realized I deserve
                 to find clothes that make me feel good." Today, Kirthana shares five colorful looks, plus a mother-and-daughter ritual
                 and style tips from the Girls5Eva costume designer...</p>
-            </div></article>
+                <p class="continue"><a href="#baby-names" >Continue</a></p>
+            </article>
             </section>
            
        </main>
+       <!--end home page-->
+    <!--blogpost page-->
+        <section>
+            <article id="Lovely-Weekend" class="blog-details">
+                <h1>Lovely Weekend</h1>
+                <address>Joanna Goddard</address>
+                <time datetime="2025-05-02">MAY 2, 2025</time>
+                <img src="puffins-1536x1024.jpg" alt="baby puffins" width="500px" height="400px">
+                <ul class="details-links">
+                    <li><a href="#p1p1">How cute are baby puffins?</a></li>
+                    <li><a href="#p1p2">How do you know your partner is the one?</a></li>
+                    <li><a href="#p1p3">lemon yogurt anything cake.</a></li>
+                    <li><a href="#p1p4">My Mother’s Day wishlist</a></li>
+                </ul>
+                <div class="paragraphs">
+                    <p id="p1p1">What are you up to this weekend? (Also, how cute are baby puffins?) Toby is watching the
+                        Yankees game tonight, and Anton
+                        and I are going to sit on the stoop and eat popsicles. Hope you have a good one, and here are a few
+                        links from around
+                        the web…</p>
+                    <p id="p1p2"><a href="https://joannagoddard.substack.com/p/how-do-you-know-your-partners-the-one"
+                            target="_blank">How do you know your partner is the one? </a>With Freddie, here are five random
+                        moments where I’ve wondered. I’d LOVE to
+                        hear your answers. (Paywalled because it’s so personal, but the last few have been free for all)</p>
+                    <p id="p1p3">Oooh, a <a href="https://smittenkitchen.com/2008/04/lemon-yogurt-anything-cake/"
+                            target="_blank">lemon yogurt anything cake.</a>Gap’s summer collection is great, like this
+                        bright
+                        striped shirt and romantic dress.
+    
+                        <a href="https://laurafenton.substack.com/p/small-takes-with-tyler-moore-the" target="_blank"> How a
+                            family of five makes their 750-square-foot New York City apartment work, including a triple bunk
+                            bed.</a>
+    
+                        The best advice on how to be happy, including “start a weird ritual.” (NYTimes gift link)
+                    </p>
+                    <p id="p1p4">My Mother’s Day wishlist: chocolate caviar and the tiniest star bracelet.
+    
+                        This little beach shop is cool.
+    
+                        Are you watching The Four Seasons starring Tina Fey and Steve Carell? The Netflix comedy follows
+                        three
+                        couples on
+                        vacation together.
+    
+                        Can we make advertising fun again?</p>
+                </div>
+            </article>
+            <article id="baby-names" class="blog-details">
+                <h1>What Are Your Favorite Baby Names?</h1>
+                <address>jannelle sanchez</address>
+                <time datetime="2025-05-06">MAY 6, 2025</time>
+                <img src="IMG_2230-scaled.webp" alt="baby " width="500px" height="500px">
+                <ul class="details-links">
+                    <li><a href="#p2p1">Can Cup of Jo PLEASE write another baby name post??</a></li>
+                    <li><a href="#p2p2">welcoming our third baby</a></li>
+                    <li><a href="#p2p3">The top 5 names</a></li>
+    
+                </ul>
+                <div class="paragraphs">
+                    <p id="p2p1">A CoJ reader named Apple asked a question that I can’t stop thinking about…
+    
+                        “Can Cup of Jo PLEASE write another baby name post?? I know Jo is maybe no longer in the baby name
+                        zone,
+                        but there are
+                        so many readers who would appreciate a chance to get name ideas from other readers — myself
+                        included!”
+                    </p>
+                    <p id="p2p2">*Well*, I, too, have been hanging in the baby name department because coming this October,
+                        <a href="https://cupofjo.com/2025/02/27/how-do-you-make-your-partner-feel-good/" target="_blank">my husband Max</a>
+                        and
+                        I will be
+                        welcoming our third baby, a sweet little girl! We are so excited, and these days all we talk about
+                        is
+                        who we think our
+                        new little nugget will resemble, how Emiliano is going to adjust to being a big brother, and what we
+                        think Ella will say
+                        the first time she meets her little sister
+                        <a href="https://www.instagram.com/p/C2x5XlmykQI/?img_index=1" target="_blank"> (here’s a video of the first time
+                            she
+                            met Emiliano)</a>.
+                    </p>
+                    <p id="p2p3">This time around, though, we’re trying to decide on a name together. For inspiration, I’ve
+                        been clocking every woman’s
+                        name that I hear on TV, read in books, and see on Instagram. We also looked at the U.S. Social
+                        Security’s 2023 list of
+                        most popular names. The top 5 names for girls were:
+                    <ul>
+                        <li> Olivia</li>
+                        <li>Emma</li>
+                        <li> Charlotte</li>
+                        <li> Amelia</li>
+                        <li> Sophia</li>
+    
+                    </ul>
+    
+    
+                    The top 10 names for boys were:
+                    <ul>
+                        <li> Liam</li>
+                        <li> Noah</li>
+                        <li> Oliver</li>
+                        <li> James</li>
+                        <li> Elijah</li>
+                    </ul>
+    
+    
+                    </p>
+    
+    
+    
+            </article>
+        </section> 
+        <!-- end blogpost page-->
+         <!--contact me-->
+         <div class="contact-me">
+        <h2 id="contact">Contact Me</h2>
+        <section class="form-table">
+            <article class="contact-form">
+                <form action="message.php" method="post" target="_blank">
+                 
+                    <input id="name" type="text" placeholder="Name" required class="name">
+                    <br>
+                    <br>
+                   
+                    <input id="email" type="email" placeholder="Email" required>
+                    <br>
+                    <br>
+                    <textarea cols="30" rows="8" name="message" placeholder="Message" required></textarea>
+                    <br>
+                    <br>
+                    <button type="submit" value="send message">Submit</button>
+                   
+                </form>
+            </article>
+            <br>
+            <br>
+            <article>
+               <p><b>Contact Information</b></p>
+                <table>
+                   
+        
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Time</th>
+                            <th>Closing Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM</td>
+                            <td>5:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For further inquiries, you can also email us at
+                    <a href="mailto:info@gmail.com" target="_blank">info@myblog.com</a>
+                </p>
+            </article>
+        </section>
+    </div>
+        <!-- end contact me-->
+
         
     </body>
 </html>
